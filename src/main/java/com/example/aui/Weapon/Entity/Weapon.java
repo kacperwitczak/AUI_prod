@@ -1,11 +1,12 @@
-package Weapon.Entity;
+package com.example.aui.Weapon.Entity;
 
-import Weapon.DTOs.WeaponResponse;
-import WeaponType.Entity.WeaponType;
+import com.example.aui.Weapon.DTOs.WeaponResponse;
+import com.example.aui.WeaponType.Entity.WeaponType;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
-import java.util.Comparator;
 import java.util.UUID;
 
 @Getter
@@ -15,12 +16,19 @@ import java.util.UUID;
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @ToString
 @EqualsAndHashCode
+@Entity
+@Table(name = "weapons")
 public class Weapon implements Serializable, Comparable<Weapon> {
+    @Id
     private UUID id;
     private String name;
     private String description;
     private Integer damage;
     private Integer range;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "weaponType")
+    @JsonBackReference
     private WeaponType weaponType;
 
     @Override

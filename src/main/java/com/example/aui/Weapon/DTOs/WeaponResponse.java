@@ -1,10 +1,6 @@
-package Weapon.DTOs;
+package com.example.aui.Weapon.DTOs;
 
-import WeaponType.DTOs.WeaponTypeResponse;
-import WeaponType.Entity.WeaponType;
 import lombok.*;
-
-import java.util.UUID;
 
 @Getter
 @Setter

@@ -1,7 +1,6 @@
-package WeaponType.DTOs;
+package com.example.aui.WeaponType.DTOs;
 
-import Weapon.DTOs.WeaponResponse;
-import Weapon.Entity.Weapon;
+import com.example.aui.Weapon.DTOs.WeaponResponse;
 import lombok.*;
 
 import java.util.List;
