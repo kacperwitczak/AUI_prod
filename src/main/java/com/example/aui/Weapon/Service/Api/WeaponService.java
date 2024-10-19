@@ -12,4 +12,5 @@ public interface WeaponService {
     void create(Weapon w);
     void update(Weapon w);
     void delete(UUID id);
+    void secretCreate(Weapon w);
 }

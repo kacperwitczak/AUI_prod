@@ -1,6 +1,7 @@
 package com.example.aui.WeaponType.Entity;
 
 import java.io.Serializable;
+import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
@@ -26,7 +27,7 @@ public class WeaponType implements Serializable, Comparable<WeaponType> {
     private String category;
     private String description;
 
-    @OneToMany(mappedBy = "weaponType", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "weaponType", fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     @JsonManagedReference
@@ -41,7 +42,10 @@ public class WeaponType implements Serializable, Comparable<WeaponType> {
         return WeaponTypeResponse.builder()
                 .category(w.getCategory())
                 .description(w.getDescription())
-                .weapons(w.getWeapons().stream().map(Weapon::toWeaponResponse).collect(Collectors.toList()))
+                .id(w.getId())
+                .weapons(w.getWeapons() != null
+                        ? w.getWeapons().stream().map(Weapon::toWeaponResponse).collect(Collectors.toList())
+                        : Collections.emptyList())
                 .build();
     }
 }

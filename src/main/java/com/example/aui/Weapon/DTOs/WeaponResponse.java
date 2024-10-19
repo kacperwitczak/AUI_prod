@@ -2,6 +2,8 @@ package com.example.aui.Weapon.DTOs;
 
 import lombok.*;
 
+import java.util.UUID;
+
 @Getter
 @Setter
 @Builder
@@ -11,8 +13,8 @@ import lombok.*;
 @EqualsAndHashCode
 public class WeaponResponse {
     private String name;
-    private String description;
     private Integer damage;
     private Integer range;
     private String weaponTypeCategory;
+    private UUID id;
 }

@@ -32,7 +32,7 @@ public class DataInitializer implements InitializingBean {
                 .build();
 
         Weapon sword = Weapon.builder()
-                .id(UUID.randomUUID())
+                .id(UUID.fromString("c4804e0f-769e-4ab9-9ebe-0578fb4f00a7"))
                 .name("Sword")
                 .description("sharp")
                 .damage(50)
@@ -73,11 +73,11 @@ public class DataInitializer implements InitializingBean {
                 .weaponType(ranged)
                 .build();
 
-        weaponTypeService.create(melee);
-        weaponTypeService.create(ranged);
-        weaponService.create(sword);
-        weaponService.create(axe);
-        weaponService.create(bow);
-        weaponService.create(crossbow);
+        weaponTypeService.secretCreate(melee);
+        weaponTypeService.secretCreate(ranged);
+        weaponService.secretCreate(sword);
+        weaponService.secretCreate(axe);
+        weaponService.secretCreate(bow);
+        weaponService.secretCreate(crossbow);
     }
 }

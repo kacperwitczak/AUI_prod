@@ -39,10 +39,10 @@ public class Weapon implements Serializable, Comparable<Weapon> {
     public static WeaponResponse toWeaponResponse(Weapon w) {
         return WeaponResponse.builder()
                 .name(w.getName())
-                .description(w.getDescription())
                 .damage(w.getDamage())
                 .range(w.getRange())
                 .weaponTypeCategory(w.getWeaponType().getCategory())
+                .id(w.getId())
                 .build();
     }
 }

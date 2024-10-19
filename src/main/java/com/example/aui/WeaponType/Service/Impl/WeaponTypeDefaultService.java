@@ -28,6 +28,7 @@ public class WeaponTypeDefaultService implements WeaponTypeService {
     }
 
     public void create(WeaponType w) {
+        w.setId(UUID.randomUUID());
         repository.save(w);
     }
 
@@ -37,5 +38,9 @@ public class WeaponTypeDefaultService implements WeaponTypeService {
 
     public void delete(UUID id) {
         repository.findById(id).ifPresent(repository::delete);
+    }
+
+    public void secretCreate(WeaponType w) {
+        repository.save(w);
     }
 }

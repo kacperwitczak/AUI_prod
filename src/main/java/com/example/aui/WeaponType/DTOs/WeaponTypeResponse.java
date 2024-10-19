@@ -4,6 +4,7 @@ import com.example.aui.Weapon.DTOs.WeaponResponse;
 import lombok.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @Getter
 @Setter
@@ -13,6 +14,7 @@ import java.util.List;
 @ToString
 @EqualsAndHashCode
 public class WeaponTypeResponse {
+    private UUID id;
     private String category;
     private String description;
     private List<WeaponResponse> weapons;
