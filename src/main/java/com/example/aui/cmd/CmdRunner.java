@@ -8,9 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import java.util.NoSuchElementException;
-import java.util.Scanner;
-import java.util.UUID;
+import java.util.*;
 
 @Component
 public class CmdRunner implements CommandLineRunner {
@@ -30,6 +28,7 @@ public class CmdRunner implements CommandLineRunner {
     public void run(String... args) throws Exception {
         Scanner scanner = new Scanner(System.in);
         String command;
+        printCommands();
         main_loop:
         while (true) {
             command = scanner.next();
@@ -66,7 +65,22 @@ public class CmdRunner implements CommandLineRunner {
                 case "quit" -> {
                     break main_loop;
                 }
+                case "commands" -> {
+                    printCommands();
+                }
             }
         }
+    }
+
+    private void printCommands() {
+        List<String> commands = new ArrayList<>();
+        commands.add("get_weapontypes");
+        commands.add("get_weapons");
+        commands.add("delete_weapon");
+        commands.add("put_weapon kategoira");
+        commands.add("quit");
+        commands.add("commands");
+
+        commands.forEach(System.out::println);
     }
 }
