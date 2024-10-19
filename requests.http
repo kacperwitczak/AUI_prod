@@ -28,6 +28,12 @@ Content-Type: application/json
 
 ###
 
+# Pobranie jednego typu broni na podstawie ID - nie istnieje
+GET http://localhost:8080/api/weapontypes/c4804e0f-769e-4ab9-9ebe-0578fb4f00a0
+Content-Type: application/json
+
+###
+
 # Utworzenie nowej broni
 POST http://localhost:8080/api/weapons
 Content-Type: application/json
@@ -47,6 +53,12 @@ Content-Type: application/json
 {
   "category": "New Weapon Type"
 }
+
+###
+
+# Pobranie jednego typu broni na podstawie ID - puste
+GET http://localhost:8080/api/weapontypes/ff4183ff-9bfb-4687-9b0b-b1ad03996472
+Content-Type: application/json
 
 ###
 

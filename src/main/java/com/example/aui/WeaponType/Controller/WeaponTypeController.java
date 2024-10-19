@@ -30,7 +30,7 @@ public class WeaponTypeController {
     @PostMapping
     public ResponseEntity<WeaponTypeResponse> createWeapon(@RequestBody WeaponTypeRequest weaponTypeRequest) {
         WeaponType w = WeaponTypeRequest.toWeaponType(weaponTypeRequest);
-        weaponTypeService.create(w);
+        w = weaponTypeService.create(w);
 
         return new ResponseEntity<>(WeaponType.toWeaponTypeResponse(w), HttpStatus.CREATED);
     }
@@ -44,7 +44,8 @@ public class WeaponTypeController {
         }
 
         WeaponType w = WeaponTypeRequest.toWeaponType(weaponTypeRequest);
-        weaponTypeService.update(w);
+        w.setId(id);
+        w = weaponTypeService.update(w);
 
         return new ResponseEntity<>(WeaponType.toWeaponTypeResponse(w), HttpStatus.OK);
     }

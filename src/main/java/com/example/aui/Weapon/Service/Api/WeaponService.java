@@ -9,8 +9,8 @@ import java.util.UUID;
 public interface WeaponService {
     Optional<Weapon> find(UUID id);
     List<Weapon> findAll();
-    void create(Weapon w);
-    void update(Weapon w);
+    Weapon create(Weapon w);
+    Weapon update(Weapon w);
     void delete(UUID id);
     void secretCreate(Weapon w);
 }

@@ -27,13 +27,13 @@ public class WeaponTypeDefaultService implements WeaponTypeService {
         return repository.findAll();
     }
 
-    public void create(WeaponType w) {
+    public WeaponType create(WeaponType w) {
         w.setId(UUID.randomUUID());
-        repository.save(w);
+        return repository.save(w);
     }
 
-    public void update(WeaponType w) {
-        repository.save(w);
+    public WeaponType update(WeaponType w) {
+        return repository.save(w);
     }
 
     public void delete(UUID id) {

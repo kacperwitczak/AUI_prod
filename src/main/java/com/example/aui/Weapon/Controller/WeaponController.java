@@ -40,8 +40,9 @@ public class WeaponController {
         if (!weaponTypeResponseEntity.getStatusCode().is2xxSuccessful()) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
+
         Weapon w = WeaponRequest.toWeapon(weaponRequest);
-        weaponService.create(w);
+        w = weaponService.create(w);
 
         return new ResponseEntity<>(Weapon.toWeaponResponse(w), HttpStatus.CREATED);
     }
@@ -55,7 +56,8 @@ public class WeaponController {
         }
 
         Weapon w = WeaponRequest.toWeapon(weaponRequest);
-        weaponService.update(w);
+        w.setId(id);
+        w = weaponService.update(w);
 
         return new ResponseEntity<>(Weapon.toWeaponResponse(w), HttpStatus.OK);
     }
