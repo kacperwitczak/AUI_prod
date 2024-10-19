@@ -28,7 +28,7 @@ public class WeaponTypeController {
     }
 
     @PostMapping
-    public ResponseEntity<WeaponTypeResponse> createWeapon(@RequestBody WeaponTypeRequest weaponTypeRequest) {
+    public ResponseEntity<WeaponTypeResponse> createWeaponType(@RequestBody WeaponTypeRequest weaponTypeRequest) {
         WeaponType w = WeaponTypeRequest.toWeaponType(weaponTypeRequest);
         w = weaponTypeService.create(w);
 
@@ -36,7 +36,7 @@ public class WeaponTypeController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<WeaponTypeResponse> putWeapon(@PathVariable UUID id, @RequestBody WeaponTypeRequest weaponTypeRequest) {
+    public ResponseEntity<WeaponTypeResponse> putWeaponType(@PathVariable UUID id, @RequestBody WeaponTypeRequest weaponTypeRequest) {
         var exists = weaponTypeService.find(id).isPresent();
 
         if (!exists) {
@@ -51,7 +51,7 @@ public class WeaponTypeController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteWeapon(@PathVariable UUID id) {
+    public ResponseEntity<Void> deleteWeaponType(@PathVariable UUID id) {
         var exists = weaponTypeService.find(id).isPresent();
 
         if (!exists) {
@@ -63,7 +63,7 @@ public class WeaponTypeController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<WeaponTypeResponse> getWeapon(@PathVariable UUID id) {
+    public ResponseEntity<WeaponTypeResponse> getWeaponType(@PathVariable UUID id) {
         var w = weaponTypeService.find(id);
 
         if (w.isPresent()) {
@@ -73,7 +73,7 @@ public class WeaponTypeController {
     }
 
     @GetMapping
-    public ResponseEntity<WeaponTypesResponse> getWeapons() {
+    public ResponseEntity<WeaponTypesResponse> getWeaponTypes() {
         var weaponTypes = weaponTypeService.findAll();
 
         return new ResponseEntity<>(WeaponTypesResponse.ToWeaponsResponse(weaponTypes), HttpStatus.OK);
