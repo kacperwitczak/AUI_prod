@@ -1,0 +1,560 @@
+GET http://localhost:8080/api/weapontypes
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T163350.200.json
+
+###
+
+GET http://localhost:8081/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T163346.200.json
+
+###
+
+DELETE http://localhost:8080/api/weapontypes/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+DELETE http://localhost:8080/api/weapontypes/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+DELETE http://localhost:8080/api/weaponstypes/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T163140.404.json
+
+###
+
+GET http://localhost:8080/api/weapontypes
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T162441.200.json
+
+###
+
+GET http://localhost:8081/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T162426.200.json
+
+###
+
+DELETE http://localhost:8080/api/weaponstypes/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T162414.404.json
+
+###
+
+GET http://localhost:8081/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T162328.200.json
+
+###
+
+DELETE http://localhost:8080/api/weapons/c4804e0f-769e-4ab9-9ebe-0578fb4f00a7
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:8081/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T162259.200.json
+
+###
+
+PUT http://localhost:8080/api/weapons/c4804e0f-769e-4ab9-9ebe-0578fb4f00a7
+Content-Type: application/json
+Content-Length: 110
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Updated Weapon Name",
+  "damage": 100,
+  "weaponTypeId": "c4804e0f-769e-4ab9-9ebe-0578fb4f00a6"
+}
+
+<> 2024-10-20T162256.200.json
+
+###
+
+PUT http://localhost:8080/api/weapons/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
+Content-Type: application/json
+Content-Length: 110
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Updated Weapon Name",
+  "damage": 100,
+  "weaponTypeId": "c4804e0f-769e-4ab9-9ebe-0578fb4f00a7"
+}
+
+###
+
+GET http://localhost:8080/api/weapontypes/ff4183ff-9bfb-4687-9b0b-b1ad03996472
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:8080/api/weapontypes
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T162230.200.json
+
+###
+
+POST http://localhost:8080/api/weapontypes
+Content-Type: application/json
+Content-Length: 35
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "category": "New Weapon Type"
+}
+
+<> 2024-10-20T162223.201.json
+
+###
+
+GET http://localhost:8080/api/weapons/weapontypes/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T162215.200.json
+
+###
+
+POST http://localhost:8080/api/weapons
+Content-Type: application/json
+Content-Length: 100
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "New Weapon",
+  "damage": 50,
+  "weaponTypeId": "c4804e0f-769e-4ab9-9ebe-0578fb4f00a6"
+}
+
+<> 2024-10-20T162208.201.json
+
+###
+
+GET http://localhost:8080/api/weapons/weapontypes/c4804x0f-769e-4ab9-9ebe-0578fb4f00a6
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T162147.400.json
+
+###
+
+GET http://localhost:8080/api/weapontypes/c4804e0f-769e-4ab9-9ebe-0578fb4f00a0
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:8080/api/weapons/weapontypes/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T162124.200.json
+
+###
+
+GET http://localhost:8080/api/weapontypes/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T162055.200.json
+
+###
+
+GET http://localhost:8080/api/weapons/c4804e0f-769e-4ab9-9ebe-0578fb4f00a7
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T162049.200.json
+
+###
+
+GET http://localhost:8080/api/weapons/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:8080/api/weapontypes
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T162037.200.json
+
+###
+
+GET http://localhost:8081/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T162030.200.json
+
+###
+
+GET http://localhost:8081/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T004525.500.json
+
+###
+
+GET http://localhost:8081/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T004515.500.json
+
+###
+
+GET http://localhost:8080/api/weapontypes
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T002706.200.json
+
+###
+
+GET http://localhost:8081/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T002653.200.json
+
+###
+
+GET http://localhost:8081/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T002403.500.json
+
+###
+
+GET http://localhost:8081/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T002236.500.json
+
+###
+
+GET http://localhost:8081/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T002015.500.json
+
+###
+
+GET http://localhost:8081/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T001851.500.json
+
+###
+
+POST http://localhost:8080/api/weapons
+Content-Type: application/json
+Content-Length: 100
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "New Weapon",
+  "damage": 50,
+  "weaponTypeId": "c4804e0f-769e-4ab9-9ebe-0578fb4f00a6"
+}
+
+<> 2024-10-20T001458.500.json
+
+###
+
+GET http://localhost:8080/api/weapontypes/c4804e0f-769e-4ab9-9ebe-0578fb4f00a0
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:8080/api/weapontypes/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T001444.200.json
+
+###
+
+GET http://localhost:8080/api/weapons/c4804e0f-769e-4ab9-9ebe-0578fb4f00a7
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T001437.500.json
+
+###
+
+GET http://localhost:8080/api/weapons/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:8080/api/weapontypes
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T001418.200.json
+
+###
+
+GET http://localhost:8081/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-20T001414.500.json
+
+###
+
+GET http://localhost:8081/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-19T235858.404.json
+
+###
+
+GET http://localhost:8082/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-19T235852.404.json
+
+###
+
+GET http://localhost:8082/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-19T235845.404.json
+
+###
+
+GET http://localhost:8081/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-19T235841.404.json
+
+###
+
+GET http://localhost:8080/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-19T235837.404.json
+
+###
+
+GET http://localhost:8080/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-19T234948.404.json
+
+###
+
+GET http://localhost:8082/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-19T234939.404.json
+
+###
+
+GET http://localhost:8081/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-19T234931.404.json
+
+###
+
+GET http://localhost:8080/api/weapons
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-19T234924.404.json
+
+###
+

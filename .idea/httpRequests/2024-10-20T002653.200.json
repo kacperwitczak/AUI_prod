@@ -1,0 +1,32 @@
+{
+  "weapons": [
+    {
+      "name": "Sword",
+      "damage": 50,
+      "range": 1,
+      "weaponTypeCategory": "Melee",
+      "id": "c4804e0f-769e-4ab9-9ebe-0578fb4f00a7"
+    },
+    {
+      "name": "Axe",
+      "damage": 60,
+      "range": 1,
+      "weaponTypeCategory": "Melee",
+      "id": "14804e0f-769e-4ab9-9ebe-0578fb4f00a6"
+    },
+    {
+      "name": "Bow",
+      "damage": 40,
+      "range": 50,
+      "weaponTypeCategory": "Ranged",
+      "id": "34804e0f-769e-4ab9-9ebe-0578fb4f00a6"
+    },
+    {
+      "name": "Crossbow",
+      "damage": 55,
+      "range": 60,
+      "weaponTypeCategory": "Ranged",
+      "id": "44804e0f-769e-4ab9-9ebe-0578fb4f00a6"
+    }
+  ]
+}

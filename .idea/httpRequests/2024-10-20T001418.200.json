@@ -1,0 +1,16 @@
+{
+  "weaponTypes": [
+    {
+      "id": "c4804e0f-769e-4ab9-9ebe-0578fb4f00a6",
+      "category": "Melee",
+      "description": "Close-range weapons",
+      "weapons": []
+    },
+    {
+      "id": "24804e0f-769e-4ab9-9ebe-0578fb4f00a6",
+      "category": "Ranged",
+      "description": "Long-range weapons",
+      "weapons": []
+    }
+  ]
+}

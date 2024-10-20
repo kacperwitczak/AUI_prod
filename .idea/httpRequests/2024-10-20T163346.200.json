@@ -1,0 +1,18 @@
+{
+  "weapons": [
+    {
+      "name": "Bow",
+      "damage": 40,
+      "range": 50,
+      "weaponTypeId": "24804e0f-769e-4ab9-9ebe-0578fb4f00a6",
+      "id": "34804e0f-769e-4ab9-9ebe-0578fb4f00a6"
+    },
+    {
+      "name": "Crossbow",
+      "damage": 55,
+      "range": 60,
+      "weaponTypeId": "24804e0f-769e-4ab9-9ebe-0578fb4f00a6",
+      "id": "44804e0f-769e-4ab9-9ebe-0578fb4f00a6"
+    }
+  ]
+}

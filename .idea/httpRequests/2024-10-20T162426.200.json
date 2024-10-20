@@ -1,0 +1,32 @@
+{
+  "weapons": [
+    {
+      "name": "Axe",
+      "damage": 60,
+      "range": 1,
+      "weaponTypeId": "c4804e0f-769e-4ab9-9ebe-0578fb4f00a6",
+      "id": "14804e0f-769e-4ab9-9ebe-0578fb4f00a6"
+    },
+    {
+      "name": "Bow",
+      "damage": 40,
+      "range": 50,
+      "weaponTypeId": "24804e0f-769e-4ab9-9ebe-0578fb4f00a6",
+      "id": "34804e0f-769e-4ab9-9ebe-0578fb4f00a6"
+    },
+    {
+      "name": "Crossbow",
+      "damage": 55,
+      "range": 60,
+      "weaponTypeId": "24804e0f-769e-4ab9-9ebe-0578fb4f00a6",
+      "id": "44804e0f-769e-4ab9-9ebe-0578fb4f00a6"
+    },
+    {
+      "name": "New Weapon",
+      "damage": 50,
+      "range": null,
+      "weaponTypeId": "c4804e0f-769e-4ab9-9ebe-0578fb4f00a6",
+      "id": "72295127-0f27-4372-b167-cb1edf7e63a1"
+    }
+  ]
+}

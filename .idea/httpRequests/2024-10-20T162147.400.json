@@ -1,0 +1,6 @@
+{
+  "timestamp": "2024-10-20T14:21:47.364+00:00",
+  "status": 400,
+  "error": "Bad Request",
+  "path": "/api/weapons/weapontypes/c4804x0f-769e-4ab9-9ebe-0578fb4f00a6"
+}

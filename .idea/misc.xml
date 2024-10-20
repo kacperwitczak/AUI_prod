@@ -5,6 +5,9 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/Gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/Weapon/pom.xml" />
+        <option value="$PROJECT_DIR$/WeaponType/pom.xml" />
       </list>
     </option>
   </component>
