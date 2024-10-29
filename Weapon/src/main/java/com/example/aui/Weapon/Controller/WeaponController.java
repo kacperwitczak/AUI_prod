@@ -19,6 +19,7 @@ import static com.example.aui.config.AppConfig.weaponTypeUrl;
 
 @RestController
 @RequestMapping("/api/weapons")
+@CrossOrigin(origins = "http://localhost:4200")
 public class WeaponController {
     private final WeaponService weaponService;
     private final RestTemplate restTemplate;

@@ -14,6 +14,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/weapontypes")
+@CrossOrigin(origins = "http://localhost:4200")
 public class WeaponTypeController {
     private final WeaponTypeService weaponTypeService;
 

@@ -5,46 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3fc23ad-76f2-46ce-a1e8-74c4c2845abd" name="Changes" comment="lab3 - prawie konieclab3 - prawie koniec">
-      <change afterPath="$PROJECT_DIR$/Gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Weapon/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Weapon/src/main/java/com/example/aui/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Weapon/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeaponType/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeaponType/src/main/java/com/example/aui/Initialize/DataInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeaponType/src/main/java/com/example/aui/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeaponType/src/main/java/com/example/aui/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeaponType/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requests.http" beforeDir="false" afterPath="$PROJECT_DIR$/Gateway/requests.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/aui/Initialize/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Weapon/src/main/java/com/example/aui/Initialize/DataInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/aui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gateway/src/main/java/com/example/aui/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/aui/Weapon/Controller/WeaponController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Weapon/src/main/java/com/example/aui/Weapon/Controller/WeaponController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/aui/Weapon/DTOs/WeaponRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Weapon/src/main/java/com/example/aui/Weapon/DTOs/WeaponRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/aui/Weapon/DTOs/WeaponResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Weapon/src/main/java/com/example/aui/Weapon/DTOs/WeaponResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/aui/Weapon/DTOs/WeaponsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Weapon/src/main/java/com/example/aui/Weapon/DTOs/WeaponsResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/aui/Weapon/Entity/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/Weapon/src/main/java/com/example/aui/Weapon/Entity/Weapon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/aui/Weapon/Repository/api/WeaponRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Weapon/src/main/java/com/example/aui/Weapon/Repository/api/WeaponRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/aui/Weapon/Service/Api/WeaponService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Weapon/src/main/java/com/example/aui/Weapon/Service/Api/WeaponService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/aui/Weapon/Service/Impl/WeaponDefaultService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Weapon/src/main/java/com/example/aui/Weapon/Service/Impl/WeaponDefaultService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/aui/WeaponType/Controller/WeaponTypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeaponType/src/main/java/com/example/aui/WeaponType/Controller/WeaponTypeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/aui/WeaponType/DTOs/WeaponTypeRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeaponType/src/main/java/com/example/aui/WeaponType/DTOs/WeaponTypeRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/aui/WeaponType/DTOs/WeaponTypeResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeaponType/src/main/java/com/example/aui/WeaponType/DTOs/WeaponTypeResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/aui/WeaponType/DTOs/WeaponTypesResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeaponType/src/main/java/com/example/aui/WeaponType/DTOs/WeaponTypesResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/aui/WeaponType/Entity/WeaponType.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeaponType/src/main/java/com/example/aui/WeaponType/Entity/WeaponType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/aui/WeaponType/Repository/api/WeaponTypeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeaponType/src/main/java/com/example/aui/WeaponType/Repository/api/WeaponTypeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/aui/WeaponType/Service/Api/WeaponTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeaponType/src/main/java/com/example/aui/WeaponType/Service/Api/WeaponTypeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/aui/WeaponType/Service/Impl/WeaponTypeDefaultService.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeaponType/src/main/java/com/example/aui/WeaponType/Service/Impl/WeaponTypeDefaultService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/aui/cmd/CmdRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/aui/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Weapon/src/main/java/com/example/aui/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Gateway/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gateway/src/main/java/com/example/aui/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Weapon/src/main/java/com/example/aui/Weapon/Controller/WeaponController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Weapon/src/main/java/com/example/aui/Weapon/Controller/WeaponController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Weapon/target/classes/com/example/aui/Weapon/Controller/WeaponController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Weapon/target/classes/com/example/aui/Weapon/Controller/WeaponController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeaponType/src/main/java/com/example/aui/WeaponType/Controller/WeaponTypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeaponType/src/main/java/com/example/aui/WeaponType/Controller/WeaponTypeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeaponType/target/classes/com/example/aui/WeaponType/Controller/WeaponTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/WeaponType/target/classes/com/example/aui/WeaponType/Controller/WeaponTypeController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,10 +94,10 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.Main.executor": "Run",
-    "git-widget-placeholder": "lab4",
+    "git-widget-placeholder": "lab5",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/kacpe/IdeaProjects/AUI",
+    "last_opened_file_path": "C:/Users/kacpe/IdeaProjects/AUI/WeaponWebApp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -166,7 +133,7 @@
       <recent name="com.example.aui.WeaponType.Service.Impl" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.requests | #2">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.aui.Main" />
       <module name="Gateway" />
@@ -226,6 +193,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Weapon" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.aui.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.aui.Main" />
@@ -241,6 +215,7 @@
       <item itemvalue="HTTP Request.requests | #15" />
       <item itemvalue="HTTP Request.requests | #1" />
       <item itemvalue="HTTP Request.requests | #2" />
+      <item itemvalue="Spring Boot.Main (3)" />
       <item itemvalue="Spring Boot.Main (2)" />
       <item itemvalue="Spring Boot.Main (1)" />
       <item itemvalue="Spring Boot.Main" />
@@ -282,6 +257,8 @@
       <workItem from="1729367929392" duration="4445000" />
       <workItem from="1729372410359" duration="749000" />
       <workItem from="1729373254027" duration="8319000" />
+      <workItem from="1729436132423" duration="2327000" />
+      <workItem from="1729458930557" duration="4311000" />
     </task>
     <task id="LOCAL-00001" summary="lab2">
       <option name="closed" value="true" />
@@ -332,12 +309,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Weapon/src/main/java/com/example/aui/Weapon/Controller/WeaponController.java</url>
-          <line>90</line>
+          <line>91</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Weapon/src/main/java/com/example/aui/Weapon/Controller/WeaponController.java</url>
-          <line>107</line>
+          <line>108</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -347,27 +324,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Weapon/src/main/java/com/example/aui/Weapon/Controller/WeaponController.java</url>
-          <line>57</line>
+          <line>58</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Weapon/src/main/java/com/example/aui/Weapon/Controller/WeaponController.java</url>
-          <line>72</line>
+          <line>73</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Weapon/src/main/java/com/example/aui/Weapon/Controller/WeaponController.java</url>
-          <line>84</line>
+          <line>85</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/WeaponType/src/main/java/com/example/aui/WeaponType/Controller/WeaponTypeController.java</url>
-          <line>78</line>
+          <line>79</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/WeaponType/src/main/java/com/example/aui/WeaponType/Controller/WeaponTypeController.java</url>
-          <line>49</line>
+          <line>50</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -377,7 +354,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Weapon/src/main/java/com/example/aui/Weapon/Controller/WeaponController.java</url>
-          <line>33</line>
+          <line>34</line>
           <properties class="com.example.aui.Weapon.Controller.WeaponController" method="createWeapon">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

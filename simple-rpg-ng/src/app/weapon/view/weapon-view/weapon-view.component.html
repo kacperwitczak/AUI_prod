@@ -1,0 +1,46 @@
+<article *ngIf="weapon">
+  <header><h2>{{weapon.name}}</h2></header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div class="row mb-2">
+          <div class="col-6">
+            Weapon Type
+          </div>
+          <div class="col-6">
+            <span>{{weapon.weaponTypeId}}</span>
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-6">
+            Damage
+          </div>
+          <div class="col-6">
+            <span>{{weapon.damage}}</span>
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-6">
+            Range
+          </div>
+          <div class="col-6">
+            <span>{{weapon.range}}</span>
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-6">
+            Description
+          </div>
+          <div class="col-6">
+            <span>{{weapon.description}}</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</article>

@@ -1,0 +1,28 @@
+<article class="text--justified">
+  <header><h2>Weapons</h2></header>
+
+  <table *ngIf="weapons">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>View</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let weapon of weapons.weapons">
+        <td>{{weapon.name}}</td>
+        <td>
+          <a [routerLink]="['/weapons', weapon.id]">View</a>
+        </td>
+        <td>
+          <a [routerLink]="['/weapons', weapon.id, 'edit']">Edit</a>
+        </td>
+        <td>
+          <button (click)="onDelete(weapon)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</article>
