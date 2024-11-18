@@ -3,17 +3,15 @@ import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
 import { WeaponTypes } from "../model/weaponTypes";
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class WeaponTypeService {
+  constructor(private http: HttpClient) { }
 
-  constructor(private http: HttpClient) {
-
+  getWeaponTypes(): Observable<any> {
+    return this.http.get<WeaponTypes>('/api/weapontypes');
   }
 
-  getWeaponTypes(): Observable<WeaponTypes> {
-    return this.http.get<WeaponTypes>('/api/weaponTypes');
+  deleteWeaponType(id: string): Observable<void> {
+    return this.http.delete<void>(`/api/weapontypes/${id}`);
   }
-
 }

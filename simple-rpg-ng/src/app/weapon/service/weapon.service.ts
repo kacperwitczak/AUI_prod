@@ -11,8 +11,6 @@ export class WeaponService {
 
   }
   getWeapons(): Observable<Weapons> {
-    let res = this.http.get<Weapons>('http://localhost:8080/api/weapons');
-    console.log(res.forEach(element => { console.log(element); }));
     return this.http.get<Weapons>('/api/weapons');
   }
 

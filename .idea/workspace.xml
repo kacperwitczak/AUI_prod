@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3fc23ad-76f2-46ce-a1e8-74c4c2845abd" name="Changes" comment="lab3 - prawie konieclab3 - prawie koniec">
-      <change afterPath="$PROJECT_DIR$/Gateway/src/main/java/com/example/aui/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Weapon/src/main/java/com/example/aui/Weapon/Controller/WeaponController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Weapon/src/main/java/com/example/aui/Weapon/Controller/WeaponController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Weapon/target/classes/com/example/aui/Weapon/Controller/WeaponController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Weapon/target/classes/com/example/aui/Weapon/Controller/WeaponController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeaponType/src/main/java/com/example/aui/WeaponType/Controller/WeaponTypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WeaponType/src/main/java/com/example/aui/WeaponType/Controller/WeaponTypeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeaponType/target/classes/com/example/aui/WeaponType/Controller/WeaponTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/WeaponType/target/classes/com/example/aui/WeaponType/Controller/WeaponTypeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-rpg-ng/.angular/cache/16.2.7/angular-webpack/7336b7e99e0462f61eadef501955ae6697d4bdda/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/simple-rpg-ng/.angular/cache/16.2.7/angular-webpack/7336b7e99e0462f61eadef501955ae6697d4bdda/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-rpg-ng/.angular/cache/16.2.7/angular-webpack/7336b7e99e0462f61eadef501955ae6697d4bdda/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/simple-rpg-ng/.angular/cache/16.2.7/angular-webpack/7336b7e99e0462f61eadef501955ae6697d4bdda/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-rpg-ng/.angular/cache/16.2.7/angular-webpack/7336b7e99e0462f61eadef501955ae6697d4bdda/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/simple-rpg-ng/.angular/cache/16.2.7/angular-webpack/7336b7e99e0462f61eadef501955ae6697d4bdda/11.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-rpg-ng/.angular/cache/16.2.7/angular-webpack/7336b7e99e0462f61eadef501955ae6697d4bdda/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/simple-rpg-ng/.angular/cache/16.2.7/angular-webpack/7336b7e99e0462f61eadef501955ae6697d4bdda/2.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-rpg-ng/.angular/cache/16.2.7/angular-webpack/7336b7e99e0462f61eadef501955ae6697d4bdda/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/simple-rpg-ng/.angular/cache/16.2.7/angular-webpack/7336b7e99e0462f61eadef501955ae6697d4bdda/3.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-rpg-ng/.angular/cache/16.2.7/angular-webpack/7336b7e99e0462f61eadef501955ae6697d4bdda/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/simple-rpg-ng/.angular/cache/16.2.7/angular-webpack/7336b7e99e0462f61eadef501955ae6697d4bdda/4.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-rpg-ng/.angular/cache/16.2.7/angular-webpack/7336b7e99e0462f61eadef501955ae6697d4bdda/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/simple-rpg-ng/.angular/cache/16.2.7/angular-webpack/7336b7e99e0462f61eadef501955ae6697d4bdda/5.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-rpg-ng/.angular/cache/16.2.7/angular-webpack/7336b7e99e0462f61eadef501955ae6697d4bdda/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/simple-rpg-ng/.angular/cache/16.2.7/angular-webpack/7336b7e99e0462f61eadef501955ae6697d4bdda/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-rpg-ng/.angular/cache/16.2.7/angular-webpack/7336b7e99e0462f61eadef501955ae6697d4bdda/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/simple-rpg-ng/.angular/cache/16.2.7/angular-webpack/7336b7e99e0462f61eadef501955ae6697d4bdda/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-rpg-ng/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/simple-rpg-ng/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-rpg-ng/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/simple-rpg-ng/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-rpg-ng/src/app/weaponType/service/weaponType.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/simple-rpg-ng/src/app/weaponType/service/weaponType.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,51 +71,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.Unnamed.executor": "Run",
-    "HTTP Request.All in requests.executor": "Run",
-    "HTTP Request.requests | #1 (1).executor": "Run",
-    "HTTP Request.requests | #1.executor": "Run",
-    "HTTP Request.requests | #10.executor": "Run",
-    "HTTP Request.requests | #11.executor": "Run",
-    "HTTP Request.requests | #12.executor": "Run",
-    "HTTP Request.requests | #13.executor": "Run",
-    "HTTP Request.requests | #14.executor": "Run",
-    "HTTP Request.requests | #15.executor": "Run",
-    "HTTP Request.requests | #2 (1).executor": "Run",
-    "HTTP Request.requests | #2.executor": "Run",
-    "HTTP Request.requests | #3.executor": "Run",
-    "HTTP Request.requests | #4.executor": "Run",
-    "HTTP Request.requests | #5.executor": "Run",
-    "HTTP Request.requests | #6.executor": "Run",
-    "HTTP Request.requests | #7.executor": "Run",
-    "HTTP Request.requests | #8.executor": "Run",
-    "HTTP Request.requests | #9.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Main.executor": "Run",
-    "git-widget-placeholder": "lab5",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/kacpe/IdeaProjects/AUI/WeaponWebApp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.All in requests.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #1 (1).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #10.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #11.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #12.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #13.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #14.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #15.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #2 (1).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #3.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #4.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #5.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #6.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #7.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #8.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #9.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Main.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lab5&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kacpe/IdeaProjects/AUI/WeaponType&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -133,7 +140,13 @@
       <recent name="com.example.aui.WeaponType.Service.Impl" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.aui.Main" />
       <module name="Gateway" />
@@ -166,21 +179,8 @@
     <configuration name="requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/Gateway/requests.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Weapon" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Weapon" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="WeaponType" />
+      <module name="AUI (1)" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.aui.Main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -194,14 +194,14 @@
       </method>
     </configuration>
     <configuration name="Main (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="Weapon" />
+      <module name="AUI" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.aui.Main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="Gateway" />
+      <module name="AUI (2)" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.aui.Main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -259,6 +259,7 @@
       <workItem from="1729373254027" duration="8319000" />
       <workItem from="1729436132423" duration="2327000" />
       <workItem from="1729458930557" duration="4311000" />
+      <workItem from="1730557770717" duration="7098000" />
     </task>
     <task id="LOCAL-00001" summary="lab2">
       <option name="closed" value="true" />

@@ -13,6 +13,10 @@ import { WeaponService } from './weapon/service/weapon.service';
 import { WeaponViewComponent } from './weapon/view/weapon-view/weapon-view.component';
 import { WeaponEditComponent } from './weapon/view/weapon-edit/weapon-edit.component';
 import { FormsModule } from "@angular/forms";
+import { WeaponTypeListComponent } from './weaponType/view/weapon-type-list/weapon-type-list.component';
+import { WeaponTypeEditComponent } from './weaponType/view/weapon-type-edit/weapon-type-edit.component';
+import { WeaponTypeDetailsComponent } from './weaponType/view/weapon-type-details/weapon-type-details.component';
+import { WeaponTypeService } from './weaponType/service/weaponType.service';
 
 /**
  * Application main module.
@@ -26,7 +30,10 @@ import { FormsModule } from "@angular/forms";
     MainComponent,
     WeaponListComponent,
     WeaponViewComponent,
-    WeaponEditComponent
+    WeaponEditComponent,
+    WeaponTypeListComponent,
+    WeaponTypeEditComponent,
+    WeaponTypeDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +43,7 @@ import { FormsModule } from "@angular/forms";
   ],
   providers: [
     WeaponService,
+    WeaponTypeService
   ],
   bootstrap: [
     AppComponent
