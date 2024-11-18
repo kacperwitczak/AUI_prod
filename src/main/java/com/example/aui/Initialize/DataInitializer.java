@@ -37,7 +37,7 @@ public class DataInitializer implements InitializingBean {
                 .description("sharp")
                 .damage(50)
                 .range(1)
-                .weaponType(melee)
+                .weapon_type(melee)
                 .build();
 
         Weapon axe = Weapon.builder()
@@ -46,7 +46,7 @@ public class DataInitializer implements InitializingBean {
                 .description("wood chopper")
                 .damage(60)
                 .range(1)
-                .weaponType(melee)
+                .weapon_type(melee)
                 .build();
 
         WeaponType ranged = WeaponType.builder()
@@ -61,7 +61,7 @@ public class DataInitializer implements InitializingBean {
                 .description("arrows")
                 .damage(40)
                 .range(50)
-                .weaponType(ranged)
+                .weapon_type(ranged)
                 .build();
 
         Weapon crossbow = Weapon.builder()
@@ -70,7 +70,7 @@ public class DataInitializer implements InitializingBean {
                 .description("desc")
                 .damage(55)
                 .range(60)
-                .weaponType(ranged)
+                .weapon_type(ranged)
                 .build();
 
         weaponTypeService.create(melee);

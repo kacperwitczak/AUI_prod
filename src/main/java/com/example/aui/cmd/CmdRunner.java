@@ -49,14 +49,16 @@ public class CmdRunner implements CommandLineRunner {
                 }
                 case "put_weapon" -> {
                     UUID uuid = UUID.fromString(scanner.next());
+                    String name = scanner.next();
+                    String description = scanner.next();
                     weaponTypeService.find(uuid).ifPresent( x -> {
                         Weapon w = Weapon.builder()
                                 .id(UUID.randomUUID())
                                 .damage(100)
-                                .description("xd")
-                                .name("xddd")
+                                .description(description)
+                                .name(name)
                                 .range(123)
-                                .weaponType(x)
+                                .weapon_type(x)
                                 .build();
 
                         weaponService.create(w);

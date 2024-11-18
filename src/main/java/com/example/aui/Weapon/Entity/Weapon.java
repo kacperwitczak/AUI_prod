@@ -27,9 +27,9 @@ public class Weapon implements Serializable, Comparable<Weapon> {
     private Integer range;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "weaponType")
+    @JoinColumn(name = "weapon_type")
     @JsonBackReference
-    private WeaponType weaponType;
+    private WeaponType weapon_type;
 
     @Override
     public int compareTo(Weapon o) {
@@ -42,7 +42,7 @@ public class Weapon implements Serializable, Comparable<Weapon> {
                 .description(w.getDescription())
                 .damage(w.getDamage())
                 .range(w.getRange())
-                .weaponTypeCategory(w.getWeaponType().getCategory())
+                .weaponTypeCategory(w.getWeapon_type().getCategory())
                 .build();
     }
 }

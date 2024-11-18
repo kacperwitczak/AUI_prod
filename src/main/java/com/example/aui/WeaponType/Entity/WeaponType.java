@@ -26,7 +26,7 @@ public class WeaponType implements Serializable, Comparable<WeaponType> {
     private String category;
     private String description;
 
-    @OneToMany(mappedBy = "weaponType", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "weapon_type", fetch = FetchType.EAGER)
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     @JsonManagedReference
