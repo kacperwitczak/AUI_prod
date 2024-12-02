@@ -46,6 +46,6 @@ export class WeaponEditComponent implements OnInit {
 
   onSubmit(): void {
     this.weaponService.putWeapon(this.uuid!, this.weapon!)
-      .subscribe(() => this.router.navigate(['/weapons']));
+      .subscribe(() => this.router.navigate(['/weapontypes', this.weapon!.weaponTypeId]));
   }
 }

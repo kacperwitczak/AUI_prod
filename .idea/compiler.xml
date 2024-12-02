@@ -15,12 +15,16 @@
         <module name="WeaponType" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AUI (3)" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="AUI" options="-parameters" />
       <module name="AUI (1)" options="-parameters" />
       <module name="AUI (2)" options="-parameters" />
+      <module name="AUI (3)" options="-parameters" />
       <module name="Gateway" options="-parameters" />
       <module name="Weapon" options="-parameters" />
       <module name="WeaponType" options="-parameters" />

@@ -1,1 +1,43 @@
-<p>weapon-type-details works!</p>
+<article *ngIf="weaponType" class="text--justified">
+    <header>
+      <h2>WeaponTypes Details</h2>
+    </header>
+    <p>
+        <a [routerLink]="['/weapontypes', weaponType.id, 'add']">Add New Weapon</a>
+      </p>
+    <div>
+        <span><b>Id: </b>{{weaponType.id}}</span>
+    </div>
+    <div>
+        <span><b>Category: </b>{{weaponType.category}}</span>
+    </div>
+    <div>
+        <span><b>Description: </b>{{weaponType.description}}</span>
+    </div>
+
+    <table *ngIf="weaponType.weapons">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>View</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let weapon of weaponType.weapons.weapons || []">
+          <td>{{ weapon.name }}</td>
+          <td>
+            <a [routerLink]="['/weapontypes', weaponType.id, 'weapons', weapon.id]">View</a>
+          </td>
+          <td>
+            <a [routerLink]="['/weapontypes', weaponType.id, 'weapons', weapon.id, 'edit']">Edit</a>
+          </td>
+          <td>
+            <button (click)="onDeleteWeapon(weapon.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </article>
+  

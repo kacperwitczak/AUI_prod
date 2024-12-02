@@ -1,1 +1,33 @@
-<p>weapon-type-edit works!</p>
+<article *ngIf="weaponType">
+    <header><h2>Edit weapon</h2></header>
+  
+    <form class="container"  #form="ngForm" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-4 p-2">
+          <div>
+            <label for="category">Name:</label>
+            <input id="category" name="category" [(ngModel)]="weaponType.category"/>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-4 p-2">
+          <div>
+            <label for="description">Description:</label>
+            <input id="description" name="description" [(ngModel)]="weaponType.description"/>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-2 p-2">
+          <button type="submit">Update</button>
+        </div>
+        <div class="col-2 p-2">
+          <button type="button" (click)="form.resetForm(original)">Reset</button>
+        </div>
+      </div>
+    </form>
+  </article>
+  

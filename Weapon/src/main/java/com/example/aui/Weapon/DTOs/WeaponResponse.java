@@ -17,4 +17,5 @@ public class WeaponResponse {
     private Integer range;
     private UUID weaponTypeId;
     private UUID id;
+    private String description;
 }

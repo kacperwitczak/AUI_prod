@@ -11,6 +11,7 @@ export class WeaponService {
 
   }
   getWeapons(): Observable<Weapons> {
+    console.log("/api/weapons");
     return this.http.get<Weapons>('/api/weapons');
   }
 
@@ -28,5 +29,9 @@ export class WeaponService {
 
   postWeapon(request: WeaponForm): Observable<any> {
     return this.http.post('/api/weapons', request);
+  }
+
+  getWeaponsByType(uuid: string): Observable<Weapons> {
+    return this.http.get<Weapons>('/api/weapons/weapontypes/' + uuid);
   }
 }

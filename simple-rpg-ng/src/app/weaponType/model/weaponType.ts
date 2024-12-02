@@ -1,4 +1,5 @@
 export interface WeaponType {
   id: string;
-  name: string;
+  category: string;
+  description: string;
 }

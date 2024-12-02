@@ -1,6 +1,8 @@
 <article class="text--justified">
-    <header><h2>WeaponTypes test</h2></header>
-  
+    <header><h2>WeaponTypes</h2></header>
+    <p>
+      <a [routerLink]="['/add/weapontypes']">Add New Weapon Type</a>
+    </p>
     <table *ngIf="weaponTypes">
       <thead>
         <tr>
@@ -12,12 +14,15 @@
       </thead>
       <tbody>
         <tr *ngFor="let weaponType of weaponTypes.weaponTypes">
-          <td>{{weaponType.name}}</td>
+          <td>{{weaponType.category}}</td>
           <td>
             <a [routerLink]="['/weapontypes', weaponType.id]">View</a>
           </td>
           <td>
             <a [routerLink]="['/weapontypes', weaponType.id, 'edit']">Edit</a>
+          </td>
+          <td>
+            <button (click)="onDelete(weaponType.id)">Delete</button>
           </td>
           <td>
           </td>

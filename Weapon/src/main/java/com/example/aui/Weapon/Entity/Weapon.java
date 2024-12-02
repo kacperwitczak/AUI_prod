@@ -36,6 +36,7 @@ public class Weapon implements Serializable, Comparable<Weapon> {
                 .range(w.getRange())
                 .weaponTypeId(w.getWeaponTypeId())
                 .id(w.getId())
+                .description(w.getDescription())
                 .build();
     }
 }

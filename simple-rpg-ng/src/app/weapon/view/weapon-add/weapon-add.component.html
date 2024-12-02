@@ -1,0 +1,61 @@
+<article *ngIf="weapon">
+    <header><h2>Add weapon</h2></header>
+  
+    <form class="container"  #form="ngForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col-4 p-2">
+                <div>
+                <label for="weaponTypeId">Name:</label>
+                <input disabled="disabled" id="weaponTypeId" name="weaponTypeId" [(ngModel)]="weapon.weaponTypeId"/>
+                </div>
+            </div>
+        </div>
+
+
+      <div class="row">
+        <div class="col-4 p-2">
+          <div>
+            <label for="name">Name:</label>
+            <input id="name" name="name" [(ngModel)]="weapon.name"/>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-4 p-2">
+          <div>
+            <label for="description">Description:</label>
+            <input id="description" name="description" [(ngModel)]="weapon.description"/>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-4 p-2">
+          <div>
+            <label for="damage">Damage:</label>
+            <textarea id="damage" name="damage" [(ngModel)]="weapon.damage"></textarea>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-4 p-2">
+          <div>
+            <label for="range">Range:</label>
+            <input id="range" name="range" [(ngModel)]="weapon.range"/>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-2 p-2">
+          <button type="submit">Add</button>
+        </div>
+        <div class="col-2 p-2">
+          <button type="button" (click)="ngOnInit()">Reset</button>
+        </div>
+      </div>
+    </form>
+  </article>
+  

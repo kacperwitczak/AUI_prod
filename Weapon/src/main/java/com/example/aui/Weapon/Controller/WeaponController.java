@@ -98,10 +98,10 @@ public class WeaponController {
     }
 
     @GetMapping("/weapontypes/{id}")
-    public ResponseEntity<List<Weapon>> getWeaponByCategory(@PathVariable UUID id) {
+    public ResponseEntity<WeaponsResponse> getWeaponByCategory(@PathVariable UUID id) {
         var w = weaponService.findAllByCategory(id);
 
-        return new ResponseEntity<>(w, HttpStatus.OK);
+        return new ResponseEntity<>(WeaponsResponse.ToWeaponsResponse(w), HttpStatus.OK);
     }
 
     @GetMapping

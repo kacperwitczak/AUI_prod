@@ -17,6 +17,8 @@ import { WeaponTypeListComponent } from './weaponType/view/weapon-type-list/weap
 import { WeaponTypeEditComponent } from './weaponType/view/weapon-type-edit/weapon-type-edit.component';
 import { WeaponTypeDetailsComponent } from './weaponType/view/weapon-type-details/weapon-type-details.component';
 import { WeaponTypeService } from './weaponType/service/weaponType.service';
+import { WeaponTypeAddComponent } from './weaponType/view/weapon-type-add/weapon-type-add.component';
+import { WeaponAddComponent } from './weapon/view/weapon-add/weapon-add.component';
 
 /**
  * Application main module.
@@ -33,7 +35,9 @@ import { WeaponTypeService } from './weaponType/service/weaponType.service';
     WeaponEditComponent,
     WeaponTypeListComponent,
     WeaponTypeEditComponent,
-    WeaponTypeDetailsComponent
+    WeaponTypeDetailsComponent,
+    WeaponTypeAddComponent,
+    WeaponAddComponent
   ],
   imports: [
     BrowserModule,
