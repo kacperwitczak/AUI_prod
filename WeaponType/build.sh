@@ -1,4 +1,6 @@
-function main() {
+#!/bin/bash
+
+main() {
     JAVA_HOME=/usr/lib/jvm/java-17 mvn clean verify
     title="$(grep -n "org.opencontainers.image.title" Dockerfile | cut -f2 -d "=" | xargs)"
     version="$(grep -n "org.opencontainers.image.version" Dockerfile | cut -f2 -d "=" | xargs)"

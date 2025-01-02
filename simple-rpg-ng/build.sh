@@ -1,4 +1,6 @@
-function main() {
+#!/bin/bash
+
+main() {
     npm install
     npm run build
     title="$(grep -n "org.opencontainers.image.title" Dockerfile | cut -f2 -d "=" | xargs)"
