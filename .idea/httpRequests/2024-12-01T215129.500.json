@@ -1,6 +1,0 @@
-{
-  "timestamp": "2024-12-01T20:51:29.948+00:00",
-  "status": 500,
-  "error": "Internal Server Error",
-  "path": "/api/weapontypes"
-}

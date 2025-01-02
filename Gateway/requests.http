@@ -69,7 +69,8 @@ Content-Type: application/json
 ###
 
 # Pobranie jednego typu broni na podstawie ID - puste
-GET http://localhost:8080/api/weapontypes/ff4183ff-9bfb-4687-9b0b-b1ad03996472
+# tu wkleic uuid z zapytania wyzej
+GET http://localhost:8080/api/weapontypes/bfa3e165-1443-4909-ba82-d228d5f4f98f
 Content-Type: application/json
 
 ###
