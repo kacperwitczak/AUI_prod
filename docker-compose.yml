@@ -1,43 +1,113 @@
-version: '3'
+version: '3.8'
 
 services:
-  simple-rpg-character:
-    image: simple-rpg-character:1.0.0-SNAPSHOT
-    restart: always
-
-  simple-rpg-profession:
-    image: simple-rpg-profession:1.0.0-SNAPSHOT
+  weapon-service:
+    build:
+      context: ./Weapon
+      dockerfile: Dockerfile
     restart: always
     environment:
-      RPG_CHARACTER_URL: "http://simple-rpg-character:8080"
-
-  simple-rpg-user:
-    image: simple-rpg-user:1.0.0-SNAPSHOT
-    restart: always
-    environment:
-      RPG_CHARACTER_URL: "http://simple-rpg-character:8080"
-
-  simple-rpg-gateway:
-    image: simple-rpg-gateway:1.0.0-SNAPSHOT
-    restart: always
-    environment:
-      RPG_CHARACTER_URL: "http://simple-rpg-character:8080"
-      RPG_PROFESSION_URL: "http://simple-rpg-profession:8080"
-      RPG_USER_URL: "http://simple-rpg-user:8080"
-      RPG_GATEWAY_HOST: "simple-rpg-gateway:8080"
-
-  simple-rpg-js:
-    image: simple-rpg-js:1.0.0-SNAPSHOT
-    restart: always
-    environment:
-      API_URL: http://simple-rpg-gateway:8080/api
+      - AUI_WEAPONTYPE_URL=http://weapontype-service:8082/
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://weapon-db:5432/weapon-database
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - SPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.PostgreSQLDialect
+    container_name: weapon-service
     ports:
-      - "8086:80"
+      - "8081:8081"
+    depends_on:
+      - weapon-db
+    networks:
+      - mynetwork
 
-  simple-rpg-ng:
-    image: simple-rpg-ng:1.0.0-SNAPSHOT
+  weapontype-service:
+    build:
+      context: ./WeaponType
+      dockerfile: Dockerfile
     restart: always
     environment:
-      API_URL: http://simple-rpg-gateway:8080/api
+      - AUI_WEAPON_URL=http://weapon-service:8081/
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://weapontype-db:5432/weapontype-database
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - SPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.PostgreSQLDialect
+    container_name: weapontype-service
     ports:
-      - "8087:80"
+      - "8082:8082"
+    depends_on:
+      - weapontype-db
+    networks:
+      - mynetwork
+
+  gateway-service:
+    build:
+      context: ./Gateway
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      - AUI_GATEWAY_HOST=http://gateway-service:8080
+      - AUI_WEAPON_URL=http://weapon-service:8081
+      - AUI_WEAPONTYPE_URL=http://weapontype-service:8082
+    container_name: gateway-service
+    ports:
+      - "8080:8080"
+    depends_on:
+      - weapon-service
+      - weapontype-service
+    networks:
+      - mynetwork
+
+  simple-rpg-ng-frontend:
+    build:
+      context: ./simple-rpg-ng
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      - API_URL=http://gateway-service:8080/api
+    container_name: simple-rpg-ng-frontend
+    ports:
+      - "4200:80"
+    depends_on:
+      - gateway-service
+    networks:
+      - mynetwork
+
+  weapon-db:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=weapon-database
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - weapon-db-data:/var/lib/postgresql/data
+    container_name: weapon-db
+    ports:
+      - "5433:5432"
+    networks:
+      - mynetwork
+
+  weapontype-db:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=weapontype-database
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - weapontype-db-data:/var/lib/postgresql/data
+    container_name: weapontype-db
+    ports:
+      - "5434:5432" 
+    networks:
+      - mynetwork
+
+volumes:
+  weapon-db-data:
+  weapontype-db-data:
+
+networks:
+  mynetwork:
+    driver: bridge

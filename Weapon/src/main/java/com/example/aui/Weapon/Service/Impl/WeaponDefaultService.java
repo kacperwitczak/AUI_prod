@@ -14,9 +14,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-import static com.example.aui.config.AppConfig.weaponTypeUrl;
-
-
 @Service
 public class WeaponDefaultService implements WeaponService {
     private WeaponRepository repository;

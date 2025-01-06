@@ -1,25 +1,9 @@
-FROM eclipse-temurin:17.0.6_10-jre
+FROM eclipse-temurin:17-jdk-alpine
 
-LABEL build_version=""
-LABEL maintainer=""
+ARG JAR_FILE=target/*.jar
 
-ENV VERSION="1.0.0-SNAPSHOT"
+COPY ${JAR_FILE} app.jar
 
-ENV SERVER_PORT=8080
-
-ENV SPRING_DATASOURCE_URL=jdbc:h2:mem:simple-rpg-character
-ENV SPRING_DATASOURCE_DRIVERCLASSNAME=org.h2.Driver
-ENV SPRING_DATASOURCE_USERNAME=admin
-ENV SPRING_DATASOURCE_PASSWORD=password
-
-ENV SPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.H2Dialect
-ENV SPRING_JPA_GENERATE_DDL=true
-ENV SPRING_JPA_HIBERNATE_DDL_AUTO=update
-
-ENV SPRING_H2_CONSOLE_enabled=true
+ENTRYPOINT ["java", "-jar", "/app.jar"]
 
 EXPOSE 8080
-
-COPY target/simple-rpg-character-${VERSION}.jar /opt/simple-rpg-character/simple-rpg-character.jar
-
-CMD ["java", "-jar", "/opt/simple-rpg-character/simple-rpg-character.jar"]

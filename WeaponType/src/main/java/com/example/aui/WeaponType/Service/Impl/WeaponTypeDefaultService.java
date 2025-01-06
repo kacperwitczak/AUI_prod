@@ -7,23 +7,23 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
+import com.example.aui.config.AppConfig;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-import static com.example.aui.config.AppConfig.weaponUrl;
-
-
 @Service
 public class WeaponTypeDefaultService implements WeaponTypeService {
     private WeaponTypeRepository repository;
     private RestTemplate restTemplate;
+    private AppConfig config;
 
     @Autowired
-    public WeaponTypeDefaultService(WeaponTypeRepository repository, RestTemplate restTemplate) {
+    public WeaponTypeDefaultService(WeaponTypeRepository repository, RestTemplate restTemplate, AppConfig config) {
         this.repository = repository;
         this.restTemplate = restTemplate;
+        this.config = config;
     }
 
     public Optional<WeaponType> find(UUID id) {
@@ -52,7 +52,7 @@ public class WeaponTypeDefaultService implements WeaponTypeService {
 
         if (w.isPresent()) {
             String weaponTypeServiceUrl = UriComponentsBuilder
-                    .fromUriString(weaponUrl + "api/weapons/weapontypes/{id}")
+                    .fromUriString(config.getWeaponUrl() + "api/weapons/weapontypes/{id}")
                     .buildAndExpand(w.get().getId())
                     .toUriString();
 

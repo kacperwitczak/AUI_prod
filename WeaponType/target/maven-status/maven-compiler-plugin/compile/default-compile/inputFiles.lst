@@ -1,0 +1,11 @@
+/home/kacper/aui/AUI_prod/WeaponType/src/main/java/com/example/aui/config/AppConfig.java
+/home/kacper/aui/AUI_prod/WeaponType/src/main/java/com/example/aui/WeaponType/Service/Impl/WeaponTypeDefaultService.java
+/home/kacper/aui/AUI_prod/WeaponType/src/main/java/com/example/aui/WeaponType/Service/Api/WeaponTypeService.java
+/home/kacper/aui/AUI_prod/WeaponType/src/main/java/com/example/aui/WeaponType/DTOs/WeaponTypesResponse.java
+/home/kacper/aui/AUI_prod/WeaponType/src/main/java/com/example/aui/Main.java
+/home/kacper/aui/AUI_prod/WeaponType/src/main/java/com/example/aui/WeaponType/Repository/api/WeaponTypeRepository.java
+/home/kacper/aui/AUI_prod/WeaponType/src/main/java/com/example/aui/WeaponType/DTOs/WeaponTypeResponse.java
+/home/kacper/aui/AUI_prod/WeaponType/src/main/java/com/example/aui/WeaponType/DTOs/WeaponTypeRequest.java
+/home/kacper/aui/AUI_prod/WeaponType/src/main/java/com/example/aui/WeaponType/Controller/WeaponTypeController.java
+/home/kacper/aui/AUI_prod/WeaponType/src/main/java/com/example/aui/WeaponType/Entity/WeaponType.java
+/home/kacper/aui/AUI_prod/WeaponType/src/main/java/com/example/aui/Initialize/DataInitializer.java

@@ -11,11 +11,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
+import com.example.aui.config.AppConfig;
 
 import java.util.List;
 import java.util.UUID;
-
-import static com.example.aui.config.AppConfig.weaponTypeUrl;
 
 @RestController
 @RequestMapping("/api/weapons")
@@ -23,18 +22,19 @@ import static com.example.aui.config.AppConfig.weaponTypeUrl;
 public class WeaponController {
     private final WeaponService weaponService;
     private final RestTemplate restTemplate;
-
+    private final AppConfig config;
 
     @Autowired
-    public WeaponController(WeaponService weaponService, RestTemplate restTemplate) {
+    public WeaponController(WeaponService weaponService, RestTemplate restTemplate, AppConfig config) {
         this.weaponService = weaponService;
         this.restTemplate = restTemplate;
+        this.config = config;
     }
 
     @PostMapping
     public ResponseEntity<WeaponResponse> createWeapon(@RequestBody WeaponRequest weaponRequest) {
         String weaponTypeServiceUrl = UriComponentsBuilder
-                .fromUriString(weaponTypeUrl + "api/weapontypes/exists/{id}")
+                .fromUriString(config.getWeaponTypeUrl() + "api/weapontypes/exists/{id}")
                 .buildAndExpand(weaponRequest.getWeaponTypeId())
                 .toUriString();
 
